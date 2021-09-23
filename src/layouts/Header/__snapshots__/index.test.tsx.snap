@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> component does match to the snapshot 1`] = `
+<header
+  className="header custom-style"
+>
+  <div
+    className="header__inner"
+  >
+    <h2
+      className="header__title"
+    >
+      Rick and Morty
+    </h2>
+  </div>
+</header>
+`;

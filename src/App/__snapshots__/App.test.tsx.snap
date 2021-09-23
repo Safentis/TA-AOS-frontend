@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> component does match to the snapshot 1`] = `
+<div
+  className="application"
+>
+  <div
+    className="application__inner"
+  >
+    <Header
+      className="application__header"
+    />
+    <Aside
+      className="application__aside"
+    />
+    <Main
+      className="application__main"
+    >
+      <MainRoutes />
+    </Main>
+  </div>
+</div>
+`;

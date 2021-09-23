@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main /> component does match to the snapshot 1`] = `
+<main
+  className="main custom-style"
+>
+  <div
+    className="main__inner"
+  />
+</main>
+`;

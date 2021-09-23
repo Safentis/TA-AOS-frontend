@@ -1,0 +1,4 @@
+.header {
+  background-color: var(--main-dk-grey-color);
+  border-bottom: 0.5rem solid var(--main-white-color);
+}

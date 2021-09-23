@@ -1,0 +1,47 @@
+.aside__inner {
+  padding: 3rem 1rem;
+}
+
+.nav {
+  margin-top: 2.75rem;
+}
+
+.nav__item {
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.nav__item:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__link {
+  transition: 0.3s;
+}
+
+.nav__icon {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.nav__link {
+  color: var(--main-dark-blue-color);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav__link:hover {
+  color: var(--main-dk-grey-color);
+}
+
+.nav__link_active {
+  color: var(--main-purple-color) !important;
+}

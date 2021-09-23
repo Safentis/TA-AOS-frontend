@@ -1,0 +1,36 @@
+.application {
+  height: 100vh;
+}
+
+.application__inner {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas:
+    'a h h h'
+    'a m m m'
+    'a m m m';
+  height: 100%;
+}
+
+.application__header {
+  grid-area: h;
+}
+
+.application__aside {
+  grid-area: a;
+}
+
+.application__main {
+  grid-area: m;
+}
+
+@media screen and (max-width: 1024px) {
+  .application__inner {
+    grid-template-rows: 0.15fr 0.25fr 1fr;
+    grid-template-areas:
+      'a a a'
+      'h h h'
+      'm m m';
+  }
+}
