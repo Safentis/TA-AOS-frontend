@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> component does match to the snapshot 1`] = `
+<label
+  className="label custom-style"
+  htmlFor="input-id"
+>
+  <span
+    className="label__content"
+  >
+    text-content
+  </span>
+</label>
+`;
+
+exports[`<Label /> default props component does match to the snapshot 1`] = `
+<label
+  className="label "
+  htmlFor="input-id"
+>
+  <span
+    className="label__content"
+  >
+    mote of texts
+  </span>
+</label>
+`;

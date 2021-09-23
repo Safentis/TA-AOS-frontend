@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> component does match to the snapshot 1`] = `
+<select
+  className="select custom-style"
+  id="select-id"
+  name="select-name"
+>
+  <option
+    key="0"
+    value="one"
+  >
+    one
+  </option>
+  <option
+    key="1"
+    value="two"
+  >
+    two
+  </option>
+  <option
+    key="2"
+    value="three"
+  >
+    three
+  </option>
+</select>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> component does match to the snapshot 1`] = `
+<input
+  className="input custom-style"
+  id="some-id"
+  onChange={[Function]}
+  placeholder="some-text"
+  type="text"
+  value="string"
+/>
+`;
+
+exports[`<Input /> default props component does match to the snapshot 1`] = `
+<input
+  className="input "
+  id="some-id"
+  onChange={[Function]}
+  placeholder="some-text"
+  type="text"
+  value="string"
+/>
+`;

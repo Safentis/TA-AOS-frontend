@@ -1,9 +1,14 @@
+.aside {
+  background-color: var(--main-dk-grey-color);
+  border-right: 0.5rem solid var(--main-white-color);
+}
+
 .aside__inner {
   padding: 3rem 1rem;
 }
 
 .nav {
-  margin-top: 2.75rem;
+  margin-top: 4.75rem;
 }
 
 .nav__item {
@@ -20,7 +25,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .nav__link {
@@ -33,15 +38,19 @@
 }
 
 .nav__link {
-  color: var(--main-dark-blue-color);
+  color: var(--main-white-color);
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 300;
 }
 
 .nav__link:hover {
-  color: var(--main-dk-grey-color);
+  color: var(--main-dark-blue-color);
 }
 
 .nav__link_active {
+  color: var(--main-dark-blue-color) !important;
+}
+
+.nav__icon_active {
   color: var(--main-purple-color) !important;
 }

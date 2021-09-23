@@ -1,4 +1,13 @@
 .header {
-  background-color: var(--main-dk-grey-color);
+  background-color: var(--main-grey-color);
   border-bottom: 0.5rem solid var(--main-white-color);
+}
+
+.header__inner {
+  padding: 0.5rem 2rem;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-weight: 300;
 }

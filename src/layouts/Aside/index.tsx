@@ -23,7 +23,7 @@ const Aside: FC<Props> = ({ className = '' }): React.ReactElement => {
         <Link className={`nav__link ${pathname === to ? "nav__link_active" : ""}`} to={to}>
           {link}
           <FontAwesomeIcon 
-            className="nav__icon" 
+            className={`nav__icon ${pathname === to ? "nav__icon_active" : ""}`} 
             icon={icon} 
           />
         </Link>

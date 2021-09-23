@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About /> component does match to the snapshot 1`] = `
+<Fragment>
+  About
+</Fragment>
+`;
