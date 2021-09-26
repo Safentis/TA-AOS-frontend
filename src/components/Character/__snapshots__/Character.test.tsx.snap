@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Character /> component does match to the snapshot 1`] = `
+<section
+  className="character custom-style"
+>
+  <div
+    className="character__avatar"
+  >
+    <img
+      className="character__image"
+      src="www.domain.com"
+    />
+  </div>
+  <ul
+    className="description-character character__description"
+  >
+    <li
+      className="description-character__item"
+    >
+      <h2>
+        morty
+      </h2>
+    </li>
+    <li
+      className="description-character__item"
+    >
+      male
+    </li>
+    <li
+      className="description-character__item"
+    >
+      Human
+    </li>
+    <li
+      className="description-character__item"
+    >
+      alive
+    </li>
+  </ul>
+</section>
+`;

@@ -1,21 +1,23 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
-import Home from './Home';
+import HomeContent from './HomeContent';
 
-import { Props } from './Home.interface';
+import { Props } from './HomeContent.interface';
 
 const setUp = (props: Props) => {
-  return shallow(<Home {...props} />);
+  return shallow(<HomeContent {...props} />);
 };
 
-describe('<Home />', () => {
+describe('<HomeContent />', () => {
   let component: ShallowWrapper<
     any,
     Readonly<{}>,
     React.Component<{}, {}, any>
   >;
-  let props: Props = {};
+  let props: Props = {
+    className: 'custom-style',
+};
 
   beforeEach(() => {
     component = setUp(props);
@@ -23,11 +25,5 @@ describe('<Home />', () => {
 
   it('component does match to the snapshot', () => {
     expect(component).toMatchSnapshot();
-  });
-
-  describe('Markup', () => {
-    it('has 1 HomeFilters element', () => {
-      expect(component.find('HomeFilters')).toBeTruthy();
-    });
   });
 });

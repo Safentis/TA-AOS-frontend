@@ -1,21 +1,23 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
-import Home from './Home';
+import HomeFilters from './HomeFilters';
 
-import { Props } from './Home.interface';
+import { Props } from './HomeFilters.interface';
 
 const setUp = (props: Props) => {
-  return shallow(<Home {...props} />);
+  return shallow(<HomeFilters {...props} />);
 };
 
-describe('<Home />', () => {
+describe('<HomeFilters />', () => {
   let component: ShallowWrapper<
     any,
     Readonly<{}>,
     React.Component<{}, {}, any>
   >;
-  let props: Props = {};
+  let props: Props = {
+    className: 'custom-style',
+  };
 
   beforeEach(() => {
     component = setUp(props);
@@ -26,8 +28,8 @@ describe('<Home />', () => {
   });
 
   describe('Markup', () => {
-    it('has 1 HomeFilters element', () => {
-      expect(component.find('HomeFilters')).toBeTruthy();
+    it('has 1 Input element', () => {
+      expect(component.find('Input')).toBeTruthy();
     });
   });
 });

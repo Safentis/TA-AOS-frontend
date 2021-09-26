@@ -1,16 +1,18 @@
-.application {
-  height: 100vh;
+.application,
+.application__inner {
+  height: 100%;
+  width: 100%;
 }
 
 .application__inner {
   display: grid;
-  grid-template-columns: 0.1fr 1fr;
-  grid-template-rows: 0.1fr 1fr;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: 5rem auto;
   grid-template-areas:
     'a h h h'
     'a m m m'
     'a m m m';
-  height: 100%;
+
 }
 
 .application__header {
@@ -27,7 +29,7 @@
 
 @media screen and (max-width: 1024px) {
   .application__inner {
-    grid-template-rows: 0.15fr 0.25fr 1fr;
+    grid-template-rows: 5rem 5rem 1fr;
     grid-template-areas:
       'a a a'
       'h h h'

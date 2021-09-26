@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeFilters /> component does match to the snapshot 1`] = `
+<div
+  className="filters custom-style"
+>
+  <Label
+    className="filters__label"
+    content="search"
+  >
+    <Input
+      className="search filters__search"
+      id="search"
+      onChange={[Function]}
+      placeholder="Type here..."
+      type="text"
+      value=""
+    />
+  </Label>
+  <Label
+    className="filters__label"
+    content="status"
+  >
+    <ForwardRef(InternalSelect)
+      className="select filters__select"
+      defaultValue="none"
+      onChange={[Function]}
+      placeholder="Status"
+    >
+      <Option
+        key="alive"
+        title="status"
+        value="alive"
+      >
+        alive
+      </Option>
+      <Option
+        key="dead"
+        title="status"
+        value="dead"
+      >
+        dead
+      </Option>
+      <Option
+        key="unknown"
+        title="status"
+        value="unknown"
+      >
+        unknown
+      </Option>
+      <Option
+        key="none"
+        title="status"
+        value="none"
+      >
+        none
+      </Option>
+    </ForwardRef(InternalSelect)>
+  </Label>
+  <Label
+    className="filters__label"
+    content="gender"
+  >
+    <ForwardRef(InternalSelect)
+      className="select filters__select"
+      defaultValue="none"
+      onChange={[Function]}
+      placeholder="Gender"
+    >
+      <Option
+        key="male"
+        title="gender"
+        value="male"
+      >
+        male
+      </Option>
+      <Option
+        key="female"
+        title="gender"
+        value="female"
+      >
+        female
+      </Option>
+      <Option
+        key="genderless"
+        title="gender"
+        value="genderless"
+      >
+        genderless
+      </Option>
+      <Option
+        key="unknown"
+        title="gender"
+        value="unknown"
+      >
+        unknown
+      </Option>
+      <Option
+        key="none"
+        title="gender"
+        value="none"
+      >
+        none
+      </Option>
+    </ForwardRef(InternalSelect)>
+  </Label>
+</div>
+`;

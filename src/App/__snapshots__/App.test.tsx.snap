@@ -1,23 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> component does match to the snapshot 1`] = `
-<div
-  className="application"
+<ContextProvider
+  value={
+    Object {
+      "currentPage": 1,
+      "entries": Array [],
+      "filter": Object {
+        "gender": "",
+        "search": "",
+        "status": "",
+      },
+      "handlePagination": [Function],
+      "numberOfItems": 0,
+      "numberOfPages": 0,
+      "setFilter": [Function],
+    }
+  }
 >
   <div
-    className="application__inner"
+    className="application"
   >
-    <Header
-      className="application__header"
-    />
-    <Aside
-      className="application__aside"
-    />
-    <Main
-      className="application__main"
+    <div
+      className="application__inner"
     >
-      <MainRoutes />
-    </Main>
+      <Header
+        className="application__header"
+      />
+      <Aside
+        className="application__aside"
+      />
+      <Main
+        className="application__main"
+      >
+        <MainRoutes />
+      </Main>
+    </div>
   </div>
-</div>
+</ContextProvider>
 `;

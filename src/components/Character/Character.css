@@ -1,0 +1,19 @@
+.character {
+    box-shadow: 
+        .1rem .1rem .1rem var(--main-dk-grey-color),
+        -.1rem -.1rem .1rem var(--main-dk-grey-color);
+    border-radius: .5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: grid;
+    grid-template-rows: 20rem 1fr;
+}
+
+.character__image {
+    width: 100%;
+    height: 100%;
+}
+
+.character__description {
+    padding: .5rem 1rem;
+}

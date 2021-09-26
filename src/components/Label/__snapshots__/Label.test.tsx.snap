@@ -3,7 +3,6 @@
 exports[`<Label /> component does match to the snapshot 1`] = `
 <label
   className="label custom-style"
-  htmlFor="input-id"
 >
   <span
     className="label__content"
@@ -16,7 +15,6 @@ exports[`<Label /> component does match to the snapshot 1`] = `
 exports[`<Label /> default props component does match to the snapshot 1`] = `
 <label
   className="label "
-  htmlFor="input-id"
 >
   <span
     className="label__content"

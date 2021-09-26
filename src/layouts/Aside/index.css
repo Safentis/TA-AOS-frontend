@@ -7,7 +7,7 @@
   padding: 3rem 1rem;
 }
 
-.nav {
+.aside__nav {
   margin-top: 4.75rem;
 }
 
@@ -40,17 +40,42 @@
 .nav__link {
   color: var(--main-white-color);
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .nav__link:hover {
-  color: var(--main-dark-blue-color);
+  color: var(--main-grey-color);
 }
 
 .nav__link_active {
-  color: var(--main-dark-blue-color) !important;
+  color: var(--main-white-color) !important;
 }
 
 .nav__icon_active {
   color: var(--main-purple-color) !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .aside {
+    border-right: none;
+    border-bottom: 0.5rem solid var(--main-white-color);
+  }
+
+  .aside__inner {
+    padding: 1rem 2rem;
+  }
+
+  .aside__nav {
+    margin: 0;
+  }
+
+  .nav__list {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .nav__item:nth-of-type(2) {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
 }

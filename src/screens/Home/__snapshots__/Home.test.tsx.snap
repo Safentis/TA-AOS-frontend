@@ -4,56 +4,11 @@ exports[`<Home /> component does match to the snapshot 1`] = `
 <div
   className="home"
 >
-  <div
-    className="filter home__filter"
-  >
-    <Label
-      content="search"
-      htmlFor="search"
-    >
-      <Input
-        className="search filter__search"
-        handleChange={[Function]}
-        id="search"
-        placeholder="Type here..."
-        value=""
-      />
-    </Label>
-    <Label
-      content="status"
-      htmlFor="status"
-    >
-      <Select
-        className="select filter__select"
-        id="status"
-        name="status"
-        options={
-          Array [
-            "alive",
-            "dead",
-          ]
-        }
-      />
-    </Label>
-    <Label
-      content="gender"
-      htmlFor="gender"
-    >
-      <Select
-        className="select filter__select"
-        id="gender"
-        name="gender"
-        options={
-          Array [
-            "male",
-            "female",
-          ]
-        }
-      />
-    </Label>
-  </div>
-  <div
-    className="content home__content"
+  <HomeFilters
+    className="home__filters"
+  />
+  <HomeContent
+    className="home__content"
   />
 </div>
 `;

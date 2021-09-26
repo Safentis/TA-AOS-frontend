@@ -9,7 +9,7 @@ const Main: FC<Props> = ({
 }): React.ReactElement => {
   return (
     <main className={`main ${className}`}>
-      <div className="main__inner">{children}</div>
+      {children}
     </main>
   );
 };

@@ -17,7 +17,6 @@ describe('<Label />', () => {
   >;
   let props: Props = {
     className: 'custom-style',
-    htmlFor: 'input-id',
     content: 'text-content',
   };
 
@@ -41,12 +40,6 @@ describe('<Label />', () => {
       ).toBeTruthy();
     });
 
-    it('has htmlFor attribute', () => {
-      expect(
-        component.find('label').prop('htmlFor') === props.htmlFor,
-      ).toBeTruthy();
-    });
-
     it(`has content ${props.content}`, () => {
       expect(
         component.find('label').text() === props.content,
@@ -62,7 +55,6 @@ describe('<Label /> default props', () => {
     React.Component<{}, {}, any>
   >;
   let props: Props = {
-    htmlFor: 'input-id',
     content: 'mote of texts',
   };
 
@@ -77,12 +69,6 @@ describe('<Label /> default props', () => {
   describe('Markup: ', () => {
     it('has only one style "label"', () => {
       expect(component.find('label').hasClass('label')).toBeTruthy();
-    });
-
-    it('has htmlFor attribute', () => {
-      expect(
-        component.find('label').prop('htmlFor') === props.htmlFor,
-      ).toBeTruthy();
     });
 
     it(`has content ${props.content}`, () => {

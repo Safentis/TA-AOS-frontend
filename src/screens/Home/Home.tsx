@@ -1,50 +1,39 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
+import { Pagination } from 'antd';
 
-import Label from '../../components/Label/Label';
-import Input from '../../components/Input/Input';
-import Select from '../../components/Select/Select';
+import HomeFilters from './HomeFilters/HomeFilters';
+import HomeContent from './HomeContent/HomeContent';
 
 import './Home.css';
 import { Props } from './Home.interface';
-import { Links } from '../../utils/links';
+import { useGlobalContext } from '../../App/App.context';
 
+// prettier-ignore
 const Home: FC<Props> = ({}): React.ReactElement => {
+  const { 
+    handlePagination, 
+    numberOfPages, 
+    numberOfItems,
+    currentPage, 
+  } = useGlobalContext();
+
   return (
     <div className="home">
-      <div className="filter home__filter">
-        <Label htmlFor="search" content="search">
-          <Input
-            className="search filter__search"
-            placeholder="Type here..."
-            handleChange={() => {}}
-            id="search"
-            value=""
-          />
-        </Label>
-
-        <Label htmlFor="status" content="status">
-          <Select
-            className="select filter__select"
-            options={['alive', 'dead']}
-            onChange={() => {}}
-            value={{}}
-            name="status"
-            id="status"
-          />
-        </Label>
-
-        <Label htmlFor="gender" content="gender">
-          <Select
-            className="select filter__select"
-            options={['male', 'female']}
-            onChange={() => {}}
-            value={{}}
-            name="gender"
-            id="gender"
-          />
-        </Label>
-      </div>
-      <div className="content home__content"></div>
+      <HomeFilters className="home__filters" />
+      <HomeContent className="home__content" />
+      {numberOfPages ? (
+        <Pagination
+          className="home__pagination"
+          current={currentPage}
+          total={numberOfItems}
+          onChange={handlePagination}
+          showSizeChanger={false}
+          defaultPageSize={20}
+          defaultCurrent={1}
+        />) : (
+          null
+        )
+      }
     </div>
   );
 };

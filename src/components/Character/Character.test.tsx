@@ -1,21 +1,28 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
-import Home from './Home';
+import Character from './Character';
 
-import { Props } from './Home.interface';
+import { Props } from './Character.interface';
 
 const setUp = (props: Props) => {
-  return shallow(<Home {...props} />);
+  return shallow(<Character {...props} />);
 };
 
-describe('<Home />', () => {
+describe('<Character />', () => {
   let component: ShallowWrapper<
     any,
     Readonly<{}>,
     React.Component<{}, {}, any>
   >;
-  let props: Props = {};
+  let props: Props = {
+    className: 'custom-style',
+    species: 'Human',
+    gender: 'male',
+    status: 'alive',
+    image: 'www.domain.com',
+    name: 'morty',
+  };
 
   beforeEach(() => {
     component = setUp(props);
@@ -23,11 +30,5 @@ describe('<Home />', () => {
 
   it('component does match to the snapshot', () => {
     expect(component).toMatchSnapshot();
-  });
-
-  describe('Markup', () => {
-    it('has 1 HomeFilters element', () => {
-      expect(component.find('HomeFilters')).toBeTruthy();
-    });
   });
 });
