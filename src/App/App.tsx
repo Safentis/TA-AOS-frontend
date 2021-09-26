@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 
 import Header from '../layouts/Header';
 import Aside from '../layouts/Aside';
@@ -47,6 +47,19 @@ const App: FC<Props> = ({}): React.ReactElement => {
       } 
     })();
   }, [filter, currentPage])
+
+  //* Scroll to top
+  useEffect(() => {
+    const scrollToTop = () => {
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+      if (c > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, c - c / 8);
+      }
+    };
+
+    scrollToTop();
+  }, [currentPage]);
 
   const value: GlobalContent = {
     handlePagination,
