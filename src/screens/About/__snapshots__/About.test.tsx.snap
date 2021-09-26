@@ -31,7 +31,7 @@ exports[`<About /> component does match to the snapshot 1`] = `
       <p
         className="about__text"
       >
-        Thanks for reading!
+        Thanks for a reading!
       </p>
     </div>
   </div>
