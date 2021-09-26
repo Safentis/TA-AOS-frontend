@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TA-AOS-frontend/static/css/main.7e856db5.chunk.css",
+    "main.js": "/TA-AOS-frontend/static/js/main.f94946f8.chunk.js",
+    "main.js.map": "/TA-AOS-frontend/static/js/main.f94946f8.chunk.js.map",
+    "runtime-main.js": "/TA-AOS-frontend/static/js/runtime-main.f7a78642.js",
+    "runtime-main.js.map": "/TA-AOS-frontend/static/js/runtime-main.f7a78642.js.map",
+    "static/css/2.786ae0dd.chunk.css": "/TA-AOS-frontend/static/css/2.786ae0dd.chunk.css",
+    "static/js/2.8b5f4f17.chunk.js": "/TA-AOS-frontend/static/js/2.8b5f4f17.chunk.js",
+    "static/js/2.8b5f4f17.chunk.js.map": "/TA-AOS-frontend/static/js/2.8b5f4f17.chunk.js.map",
+    "index.html": "/TA-AOS-frontend/index.html",
+    "static/css/2.786ae0dd.chunk.css.map": "/TA-AOS-frontend/static/css/2.786ae0dd.chunk.css.map",
+    "static/css/main.7e856db5.chunk.css.map": "/TA-AOS-frontend/static/css/main.7e856db5.chunk.css.map",
+    "static/js/2.8b5f4f17.chunk.js.LICENSE.txt": "/TA-AOS-frontend/static/js/2.8b5f4f17.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7a78642.js",
+    "static/css/2.786ae0dd.chunk.css",
+    "static/js/2.8b5f4f17.chunk.js",
+    "static/css/main.7e856db5.chunk.css",
+    "static/js/main.f94946f8.chunk.js"
+  ]
+}
