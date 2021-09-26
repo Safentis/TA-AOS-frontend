@@ -7,9 +7,10 @@ import App from './App/App';
 import './index.css';
 import 'antd/dist/antd.css';
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={'TA-AOS-frontend/'}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
